@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gamja Flower', cursive;
+}
+
+.iconsp {
+    /* 박스가 된다. */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    /* background-color: aqua; */
+}
+
+.iconsp > span {
+    /* font-size: larger; */
+    font-size: 30px;
+
+}
+
+header {
+    /* 아래의 세 라인이 nav에서 적용되면 미적용 / nav를 감싸고 있는 header에 값을 준다. */
+    /* 스크롤이 내려가도 고정되도록 설정 */
+    top: 0px;
+    left: 0px;
+    /* height: 60px;
+    width: 100%; */
+    position: sticky;
+}
+
+nav {
+    height: 60px;
+    background-color: salmon;
+    padding: 20px;
+    /* 아래 세 라인: nav 안의 콘텐츠들을 중앙 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    /* 하이퍼링크의 밑줄 제거 */
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover, nav li:hover {
+    background-color: black;
+    color: aqua;
+}
+
+nav a:active {
+    color: orange
+}
+
+nav li {
+    /* 블록형이 아닌 인라인 스타일로 변경 / 블럭이지만 인라인이야~ / 단순히 inline으로만 하면 박스의 크기를 조정할 수 없으므로 inline-block 사용 */
+    /* display: inline-block; */
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60;
+    /* background-color: aliceblue; */
+}
+
+main {
+    /* article들이 옆으로 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    background-color: skyblue;
+    /* 글씨 색깔 */
+    color: darkblue; 
+
+    /* article과 article 사이의 간격 */
+    margin: 20px;  
+    
+    /* 반시계 반향 */
+    /* margin: 50px 40px 30px 20px; */
+
+    /* 값 두 개 */
+    /* margin: 50px 20px; */
+
+    padding: 10px;
+
+    width: 80%;
+
+    /* 자식들이 옆으로 나오게 만들기 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 100px;
+}
+
+
+#a1 {
+    /* height: 50vh; */
+    display: flex;
+    /* 두번째 박스를 옆이 아닌 아래도 옮겨주는 속성 */
+    flex-direction: column;
+    justify-content: center;
+    /* 수직축으로 움직임 */
+    align-items: center;
+
+    /* flex-direction: column 상태에서 align-items: left 가 되면 위 아래로 있는 모든 콘텐츠가 왼쪽으로 이동한다 */
+    /* align-items: left;  */
+}
+
+#a1 > div {
+    border: 2px solid blue;
+    /* 크기가 작아진다면 안의 내용물의 크기도 작아진다. */
+    border-radius: 30px;
+    width: 250px;
+    height: 250px;
+}
+
+#a1 img {
+    /* 부모의 div의 100%를 잡는 것이다. 즉 div가 200px 이라면, 그 밑에 있는 이미지의 100%는 200px가 된다. */
+    display: block;
+    /* width: 100%; */
+    width: 250px;
+    border-radius: 30px;
+}
+
+ul {
+    margin: 20px;
+}
+
+#a2 {
+    background-color: lightcoral;
+}
+
+.c3 {
+    background-color: aquamarine;
+}
+
+.c3>h1 {
+    color: aliceblue;
+}
+
+/* .c3 > ul > li { */
+.c3 li {
+    color: green;
+}

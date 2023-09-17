@@ -1,0 +1,30 @@
+* {
+    font-family: 'Gamja Flower', cursive;
+}
+
+.c1 {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.c1 > div{
+    margin: 40px;
+    /* width: 300px */
+    width: 30%;
+    /* 인라인일 경우 text-align: center; 사용하면 중앙 정렬*/
+    text-align: center;
+}
+
+.c1 > p {
+    width: 60%;
+    display: flex;
+}
+
+.c1 img {
+    /* display: block; */
+    /* width: 100%; */
+    /* width: 500px;
+    height: 100px; */
+    border-radius: 20px;
+}
